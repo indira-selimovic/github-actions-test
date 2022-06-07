@@ -9,7 +9,7 @@ rm -rf $local_path
 
 # Create a zip of the current directory.
 echo "$local_path"
-zip -r $local_path . 
+zip -r $local_path videos
 
 # Install required dependencies for Python script.
 pip3 install boto3
