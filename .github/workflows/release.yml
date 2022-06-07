@@ -5,5 +5,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: Release to S3
-        run:  bash scripts/pipeline/release.sh "test-video-upload-with-github-action" "cypress/images2.zip" ${{secrets.AWS_ACCESS_KEY}} ${{secrets.AWS_SECRET_ACCESS_KEY}} "images2.zip"
+        run:  bash scripts/pipeline/release.sh "test-video-upload-with-github-action" "cypress/images1.zip" ${{secrets.AWS_ACCESS_KEY}} ${{secrets.AWS_SECRET_ACCESS_KEY}} "images1.zip"
